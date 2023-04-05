@@ -1,0 +1,7 @@
+CREATE DATABASE IF NOT EXISTS saludos;
+USE saludos;
+CREATE USER IF NOT EXISTS 'yo'@'localhost' IDENTIFIED BY 'qwerfdsa12';
+CREATE USER IF NOT EXISTS 'yo'@'%' IDENTIFIED BY 'qwerfdsa12';
+GRANT ALL PRIVILIGES ON saludos.* TO 'yo'@'localhost';
+GRANT ALL PRIVILIGES ON saludos.* TO 'yo'@'%';
+FLUSH PRIVILIGES;
