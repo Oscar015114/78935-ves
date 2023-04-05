@@ -23,10 +23,10 @@ services:
     image: mariadb
     networks:
       - mired
-    environtment:
+    environment:
       MARIADB_ROOT_PASSWORD: 123456
     volumes:
     - ./app:/docker-entrypoint-initdb.d
     - ./app/datos:/var/lib/mysql
-network:
+networks:
   mired:
